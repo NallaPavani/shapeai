@@ -1,0 +1,66 @@
+* { /* Override the default browser spacing */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #ebf2ff;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    z-index: 9999;
+}
+
+.navbar__brand {
+    width: 100px;
+}
+
+.brand__logo {
+    width: 100%;
+}
+
+.navbar__nav__items {
+    display: flex;
+}
+
+.button__primary {
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px red;
+    border-radius: 4px;
+    display: block;
+}
+
+.button__primary:hover {
+    background-position: right center;
+}
+
+
+@media (min-width: 1200px) {
+    .navbar {
+        padding: 0 3rem;
+    }
+    .button__primary {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+}
